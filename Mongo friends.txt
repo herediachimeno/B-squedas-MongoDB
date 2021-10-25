@@ -1,0 +1,8 @@
+1 - db.samples_friends.find({season:1.0}).pretty(); 
+2 - db.samples_friends.find({airtime:"20:00"}).pretty(); 
+3 -db.samples_friends.find({name:/w/}).pretty(); 
+4 -db.samples_friends.find({season:2.0,number:1.0}).pretty(); 
+5 -db.samples_friends.find({season:2.0,number:{$lt:6.0}}).pretty(); 
+6 -db.samples_friends.find({name:/^The One/}).pretty(); 
+7 -db.samples_friends.find({summary:/Chandler/}).pretty(); 
+8 - db.samples_friends.find({season:3.0, summary:/Ross/}).pretty();

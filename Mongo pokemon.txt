@@ -1,0 +1,13 @@
+1 - db.samples_pokemon.find({num:"123"}).pretty(); 
+2 -db.samples_pokemon.find({type:"Poison"}).pretty(); 
+3 -db.samples_pokemon.find({avg_spawns:4.2}).pretty(); 
+4 -db.samples_pokemon.find({$and:[{candy_count:{$lt:40}},{candy_count:{$gt:20}}]}).pretty();
+5 - db.samples_pokemon.find({spawn_chance:{$gte:0.088}}).pretty(); 
+6 - db.samples_pokemon.find().sort({weight:-1}).limit(10).pretty(); 
+7 - 
+8 - 
+9 -db.samples_pokemon.find({$and:})[{weaknesses:"Ground"},{multipliers:null}]}).pretty();
+10 - db.samples_pokemon.find().sort({egg:-1}).pretty();
+11 - db.samples_pokemon.find({candy_count:{$lt:100}}).sort({candy_count:-1}).pretty();
+12 - db.samples_pokemon.find({egg:"Not in Eggs"}).pretty();
+13 - db.samples_pokemon.find({$or:[{multiplier:null},{candy_count:{$gte:100}}]}).pretty();
